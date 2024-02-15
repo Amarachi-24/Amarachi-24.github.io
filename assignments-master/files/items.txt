@@ -1,0 +1,6 @@
+book,23400,Rich dad poor dad,Marowsky,123245
+book,51784,Rich dad poor dad,Marowsky,123245
+article,47871,Some article,manish,2222
+book,44376,Some article,manish,2222
+book,23988,Outliers,Malcolm Gladwell,23455
+book,19165,Some article,manish,2222
