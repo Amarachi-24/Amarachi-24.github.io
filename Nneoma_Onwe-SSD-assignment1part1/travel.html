@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl's  Trip</title>
+    <!-- Add your CSS and other meta tags here -->
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a separate CSS file -->
+</head>
+
+<body>
+    
+    <!-- Nav Bar -->
+    <section class="nav-bar">
+        <div class="logo">Girl's World Trip</div>
+         <!--===========Html Links=================-->
+        <ul class="menu">
+            <li><a href="Home.html">home</a></li>
+            <li><a href="travel.html">Destination</a></li>
+            <li><a href="Login.html">Login </a></li>
+            <li><a href="About Us.html">About us</a></li>
+        </ul>
+    </section>
+    <!-- 2 seo guildence is Descriptive and Relevant Meta Information:The HTML <head> section contains a meta title (<title>)
+         tag that provides a concise and descriptive title for the webpage. <title>Travel Website - Sign Up</title>.
+    semantic HTML and Structure:The code effectively utilizes semantic HTML elements, including <section>, <div>, <form>, 
+        <label>, <input>, <h2>, and more. 
+        Using semantic HTML allows search engines to better understand the structure and meaning of the content.
+    -->
+<!-- the 2 universal design is responsive and datalist because the resposive is  Using the meta viewport tag in the <head> section 
+        makes the webpage responsive and adapts to various screen sizes. and the data list is The form's input fields use the <datalist> 
+        element to provide predefined options. This can improve usability for all users, including those 
+        who might benefit from suggestions or autocomplete functions. It can be especially 
+        useful for people with cognitive or motor impairments who may struggle to type long entries.-->
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-text-item">
+            <div class="banner-heading">
+                <h1>Place to travel</h1>
+            </div>
+            <form class="form">
+                <input type="text" list="toList" placeholder="Travel From">
+                <datalist id="toList">
+                    <option>Dublin</option>
+                    <option>uk</option>
+                    <option>America</option>
+                    <option>england </option>
+                    <option>spain </option>
+                    <option>Switzerland</option>
+                    <option>Seoul</option>
+                </datalist>
+        
+                    <input type="text" list="fromList" placeholder="Travel To">
+                    <datalist id="fromList">
+                        <option>Dubai</option>
+                        <option>Spain</option>
+                        <option>Italy</option>
+                        <option>Portugal</option>
+                        <option>Paris</option>
+                        <option>Switzerland</option>
+                        <option>Seoul</option>
+                    </datalist>
+                    <input type="date" class="Departure-date ">
+                    <input type="date" class="Return-date ">
+                <a href="#" class="book">Book Now</a>
+            </form>
+        </div>
+    </section>
+
+    <!-- Places -->
+    <section class="places">
+        <div class="places-text">
+            <small>Destination</small>
+            <h2>Book Cheap Flight</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="portugal.jpg" alt="portugal">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>Portugal</h2>
+                    <p class="cost">€95 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 5 Days</p>
+                        <p class="location">✈ Portugal</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="dubai1.jpg" alt="dubai">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>Dubai</h2>
+                    <p class="cost">€1870 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 4 Days</p>
+                        <p class="location">✈ Dubai, </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="Greece.jpg" alt="greece">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>Greece</h2>
+                    <p class="cost">€200 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 3 Days</p>
+                        <p class="location">✈ Greece, </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="paris1.jpg" alt="paris">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>Paris</h2>
+                    <p class="cost">€100 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 3 Days</p>
+                        <p class="location">✈ Paris</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="spain.jpg" alt="spain">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>Spain</h2>
+                    <p class="cost">€180 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 8 Days</p>
+                        <p class="location">✈ Spain , </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="Italy.jpg" alt="Italy">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>Italy</h2>
+                    <p class="cost">€140 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 7 Days</p>
+                        <p class="location">✈ Italy, </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class ="banner">
+        <div class ="banner-highlights">
+            <div class ="container">
+                <div class ="row">
+                    <div class = "col-md-8">
+                        <h1> Get 30% on top Destinations</h1>
+                        <p> Book your ticket before 14th of May 2024 and avil 30% flat Discounts</p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="links">
+            <h3>Get to Know Us</h3>
+            <ul>
+                <li>Offers & Discounts</li>
+                <li>Get Coupon</li>
+                <li>Contact Us</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>Get to Know Us</h3>
+            <ul>
+                <li>Offers & Discounts</li>
+                <li>Get Coupon</li>
+                <li>Contact Us</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    // JavaScript code to handle "Book Now" functionality
+    document.querySelectorAll('.book').forEach(item => {
+        item.addEventListener('click', event => {
+            event.preventDefault(); // Prevent default link behavior
+            alert('Booking functionality will be implemented here.'); // Show alert message
+        });
+    });
+</script>
+</html>

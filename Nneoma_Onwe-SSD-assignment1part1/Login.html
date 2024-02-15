@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website - Login</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url("portugal.jpg") no-repeat center center fixed;
+            background-size: cover;
+            animation: moveBackground 20s infinite alternate; /* Adjust animation duration as needed */
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 10% 10%; /* Adjust the values to control the movement */
+            }
+        }
+
+        .overlay {
+            background: rgba(255, 255, 255, 0.8); /* Adjust the alpha value to control the overlay opacity */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .signup-container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+        .nav-bar {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        height: 90px;
+        background-color: #fff;
+        box-shadow: 3px 3px 10px lightslategray;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        }
+
+        .logo {
+            flex: 1;
+            font-size: 40px;
+            padding: 20px;
+            margin-left: 50px;
+            font-family: Satisfy;
+        }
+
+        ul.menu {
+            flex: 1;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .menu li {
+            flex: 1;
+            list-style-type: none;
+            font-size: 16px;
+            font-family: "Barlow Condensed";
+            text-align: center;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        .menu li a:hover {
+            color: midnightblue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<!--===========Nav Bar=================-->
+<section class="nav-bar">
+    <div class="logo">Grirl World Trip</div>
+     <!--===========Html Links=================-->
+    <ul class="menu">
+        <li><a href="Home.html">home</a></li>
+        <li><a href="travel.html">Destination</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="About Us.html">About us</a></li>
+    </ul>
+</section>
+    <div class="overlay">
+        <div class="signup-container">
+             <!-- this show the use of inline -->
+            <h2 style="text-align: center; color: #333;">Login</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">login</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('loginForm');
+
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const username = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // Here you can perform validation and login logic
+                // For example, you can send the data to a server using fetch or XMLHttpRequest
+                console.log('Submitted Data:');
+                console.log('Username:', username);
+                console.log('Email:', email);
+                console.log('Password:', password);
+
+                // For demo purposes, let's just log the submitted data
+                alert('Login successful! Check console for details.');
+            });
+        });
+    </script>
+</body>
