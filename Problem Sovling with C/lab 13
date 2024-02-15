@@ -1,0 +1,65 @@
+/* Name:NNEOMA ONWE
+   Due Date: 10/12/2023
+we were ask to write a program the find a average ,higest ,lowest ,yearly highest value
+this code is write in c89  */
+
+/* Libraries used in this program: */
+
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+
+int LineCounter(void);
+
+
+int main()
+{
+
+    /* Iniatialization and declaration of variables start here */
+    int yearMonth;
+    float precipitation;
+
+    /*  Trigger the LineCounter function to get the amount of lines in the file
+        This is used to determine the size of the arrays */
+    int lineCounter = LineCounter();
+
+    FILE *fptr;
+
+    int lineCharSize = 30;
+    char lineCharacters[lineCharSize];
+
+    /*  Create the arrays with the size of the amount of lines in the file from the LineCounter function
+        This is used to store the precipitation values and the year and month values */
+    float precipitationValues[lineCounter];
+    int yearMonthValues[lineCounter];
+
+    lineCounter = 0;
+
+    /*  Use the file pointer to open the file and check if it is NULL */
+    fptr = fopen("testdata.txt", "r");
+    if (fptr == NULL)
+    {
+        printf("Error opening file\n");
+        exit(1);
+    }
+
+        /* If the file pointer is not NULL then the program goes through the file and stores the values in the arrays */
+    else
+    {
+
+        /* While the line that is being read is not empty, trigger the code block */
+        while (fgets(lineCharacters, lineCharSize, fptr) != NULL)
+        {
+
+            /* Read a line of code for its year and month values and its precipitation value
+                Then store the values in the arrays */
+            fscanf(fptr, "%d,%f", &yearMonth, &precipitation);
+
+            /* Set the values in the arrays */
+            precipitationValues[lineCounter] = precipitation;
+            yearMonthValues[lineCounter] = yearMonth;
+
+            lineCounter++;
+        }
+    }
+}
