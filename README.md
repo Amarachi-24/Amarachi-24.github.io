@@ -1,6 +1,4 @@
-# Amarachi-24.github.io
 # Networking Study Respository
-
 Welcome to my networking study repository! This repository is dedicated to documenting my journey in studying networking concepts and protocols. I have experience in C language, Python,SQL,Html and Css.I aim to expand my knowledge into the realm of networking to enhance my skills and understanding of computer systems.
 
 # Table of Contents
